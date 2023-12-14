@@ -3,7 +3,7 @@ import profilePicture from '../../public/imgs/me.jpg'
 
 export function Header() {
     return (
-        <header tabIndex={0} className='z-1'>
+        <header className='z-1'>
             <div className='cotainer w-full '>
                 <div className="grid grid-cols-1 grid-rows-1 gap-4 auto-cols-auto">
                     <div className='flex flex-row flex-nowrap col-span-2' style={{ alignContent: 'space-around', justifyContent: 'flex-start', alignItems: 'center' }}>

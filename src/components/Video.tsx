@@ -16,14 +16,14 @@ function VideoPlayer({ isPlaying }: { isPlaying: boolean }) {
     });
 
     return (
-        <video ref={videoref} preload='auto' autoPlay={true} loop muted poster='/imgs/poster.png'>
+        <video ref={videoref} preload='auto' autoPlay={true} loop muted poster='/imgs/poster.png' aria-description="Video de fundo sem audio que mostra imagens de satelite da terra e planetas do sistema solar">
             <source src="/assets/website-video.webm" type="video/webm" />
             <source src="/assets/website-video.mp4" type="video/mp4" />
         </video>
     )
 }
 
-export function Video({tabIndex}: {tabIndex: number}) {
+export function Video() {
     const [isPlaying, setIsPlaying] = useState(true);
 
     return (
@@ -32,7 +32,7 @@ export function Video({tabIndex}: {tabIndex: number}) {
                 <VideoPlayer isPlaying={Boolean(isPlaying)} />
             </div>
             <div className="controls">
-                <span onClick={() => setIsPlaying(!isPlaying)}>
+                <span onClick={() => setIsPlaying(!isPlaying)} onKeyDown={() => setIsPlaying(!isPlaying)} tabIndex={4} aria-description="Controles do video de fundo, aperte enter ou clique para pausar ou rodar o video.">
                     {isPlaying ?
                         <span className="opacity-75 hover:opacity-50 cursor-pointer w-16 h-16 inline-block" title="Pausar video de fundo">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" className="w-full h-full">
