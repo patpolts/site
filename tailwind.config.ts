@@ -33,7 +33,11 @@ const config: Config = {
         '4xl': '2rem'
       },
       width: {
-        'w-11': '4rem'
+        'w-11': '4rem',
+        'w-16': '5rem'
+      },
+      height: {
+        'h-16': '5rem'
       },
       extend: {
         backgroundImage: {
