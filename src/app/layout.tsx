@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,15 +17,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-BR">
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"></meta>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"></link>
-      </head>
+    <html lang="en">
       <body className={inter.className}>
-        <div className='container text-center bg-center'>
+        <div className='container text-center bg-center  min-w-full min-h-screen p-4'>
+          <Header />
           {children}
+          <Footer />
         </div>
       </body>
     </html>
