@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import profilePicture from '../../public/imgs/me.jpg'
 
 export function Header() {
     return (
@@ -8,7 +9,7 @@ export function Header() {
                     <div className='flex flex-row flex-nowrap col-span-2' style={{ alignContent: 'space-around', justifyContent: 'flex-start', alignItems: 'center' }}>
                         <figure className='overflow-hidden w-20 h-20' tabIndex={1} title="Pati Poltts - Fullstack freelancer.">
                             <a href='https://github.com/patpolts' target='_blank'>
-                                <Image className='rounded-full w-full h-full' src="/imgs/me.jpg" width={100} height={100} priority alt="Foto Perfil" title="Clique para acessar meu github" />
+                                <Image className='rounded-full w-full h-full' src={profilePicture} alt="Foto Perfil" title="Clique para acessar meu github" />
                             </a>
                         </figure>
                         <hgroup tabIndex={2}>
