@@ -89,7 +89,6 @@ header hgroup h1 {
   color: #fff;
   text-shadow: 1px 0 2px rgba(0, 0, 0, .4);
 }
-
 header hgroup h2 {
   font-size: 1.4em;
   letter-spacing: 1px;
@@ -101,6 +100,7 @@ header hgroup h2 {
   color:  rgb(109, 236, 89); 
   text-shadow: 0px 0 1px rgba(0,0,0,.6);
 }
+
 .maintenance-mode{
   position: absolute;
   bottom: 2em;
@@ -110,4 +110,23 @@ header hgroup h2 {
   color: #000;
   text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
   font-size: 2em;
+}
+
+@media all and (max-width: 768px) {
+  header hgroup h1 {
+    font-size: 1.8em;
+  }
+  header hgroup h2{
+    font-size: 1.2em;
+    margin: 0 0 0 1rem;
+  }
+  .controls{
+    right: 1em;
+  }
+}
+@media all and (max-width: 480px) {
+
+  .maintenance-mode{
+    font-size: 1.2em;
+  }
 }
