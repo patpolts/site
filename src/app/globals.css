@@ -17,7 +17,7 @@
 }
 
 body {
-  font-family: '\'Montserrat\', sans-serif';
+  font-family: var(--montserrat);
   color: rgb(var(--foreground-rgb));
   background-color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom,
@@ -90,11 +90,11 @@ header hgroup h1 {
   text-shadow: 1px 0 2px rgba(0, 0, 0, .4);
 }
 header hgroup h2 {
-  font-size: 1.4em;
+  font-size: 1.45em;
   letter-spacing: 1px;
   font-weight: bold;
   width: auto;
-  margin: -1rem 0 0 1rem;
+  margin: -1rem 0 0 .8em;
   padding: 0;
   text-align: left; 
   color:  rgb(109, 236, 89); 

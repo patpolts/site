@@ -4,9 +4,9 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main tabIndex={3}>
-      <Video tabIndex={4} />
-      <p title="maintenance mode" className="maintenance-mode">site em desenvolvimento</p>
+    <main>
+      <Video />
+      <p title="Site em desenvolvimento" className="maintenance-mode" tabIndex={3} >site em desenvolvimento</p>
     </main>
   )
 }
