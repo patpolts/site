@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main>
       <Video />
-      <p title="Site em desenvolvimento" className="maintenance-mode" tabIndex={3} >site em desenvolvimento</p>
+      <p title="Site em desenvolvimento" className="maintenance-mode" tabIndex={6} >site em desenvolvimento</p>
     </main>
   )
 }
