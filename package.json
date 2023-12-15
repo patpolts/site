@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "npx serve@latest out",
     "lint": "next lint"
   },
   "engines": {
@@ -16,20 +16,22 @@
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
-    "postcss": "^8",
-    "postcss-import": "^15.1.0",
-    "autoprefixer": "^10.0.1",
-    "tailwindcss": "^3.3.0"
+    "sharp": "^0.33.0"
   },
   "devDependencies": {
-    "@types/node": "^20",
+    "tailwindcss": "^3.3.0",
     "@types/react": "^18",
+    "@types/node": "^20",
     "@types/react-dom": "^18",
     "@types/video-react": "^0.15.5",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "postcss": "^8",
+    "postcss-import": "^15.1.0",
+    "autoprefixer": "^10.0.1"
   },
-  "cacheDirectories": [".next/cache"]
-
+  "cacheDirectories": [
+    ".next/cache"
+  ]
 }
