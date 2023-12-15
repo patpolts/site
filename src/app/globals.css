@@ -100,7 +100,14 @@ header hgroup h2 {
   color:  rgb(109, 236, 89); 
   text-shadow: 0px 0 1px rgba(0,0,0,.6);
 }
-
+header .icons{
+  z-index: 4;
+}
+header .icons > div > span{
+  margin-right: 1rem;
+  transition: .4s;
+  transform-style: preserve-3d;
+}
 .maintenance-mode{
   position: absolute;
   bottom: 2em;
