@@ -25,6 +25,7 @@ export default function RootLayout({
         {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
             <GoogleAnalytics ga_id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
           ) : null}
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2823476338007490" crossOrigin="anonymous"></script>
       </head>
       <body >
         <div className='container text-center bg-center  min-w-full min-h-screen p-4'>
