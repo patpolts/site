@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { Header } from '@/components/Header'
@@ -22,10 +24,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <script src="https://kit.fontawesome.com/ae74012174.js" crossOrigin="anonymous" async/>
-        {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
-            <GoogleAnalytics ga_id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
-          ) : null}
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2823476338007490" crossOrigin="anonymous"></script>
       </head>
       <body >
         <div className='container text-center bg-center  min-w-full min-h-screen p-4'>
@@ -33,6 +31,8 @@ export default function RootLayout({
               {children}
             <Footer />
         </div>
+        <Analytics/>
+        <SpeedInsights />
       </body>
     </html>
   )
