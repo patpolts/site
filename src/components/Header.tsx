@@ -7,11 +7,11 @@ export function Header() {
     return (
         <header >
             <div className='cotainer w-full '>
-                <div className="grid grid-cols-3 grid-rows-1 gap-4 auto-cols-auto">
+                <div className="grid grid-cols-3 grid-rows-1  md:gap-4 sm:gap-2 auto-cols-auto">
                     <div className='flex flex-row flex-nowrap ' style={{ alignContent: 'space-around', justifyContent: 'flex-start', alignItems: 'center' }}>
-                        <figure className='overflow-hidden w-20 h-20' tabIndex={1} title="Pati Poltts - Fullstack freelancer.">
+                        <figure className='overflow-hidden md:w-20 md:h-20 sm:w-14 sm:h-auto' tabIndex={1} title="Pati Poltts - Fullstack freelancer.">
                             <a href='https://github.com/patpolts/site' target='_blank'>
-                                <Image className='rounded-full w-full h-full' src={profilePicture} alt="Foto Perfil" title="Clique para ver este projeto no github" />
+                                <Image className='rounded-full w-full h-full ' src={profilePicture} alt="Foto Perfil" title="Clique para ver este projeto no github" />
                             </a>
                         </figure>
                         <hgroup tabIndex={2}>
@@ -20,7 +20,7 @@ export function Header() {
                         </hgroup>
                     </div>
                     <div className='col-span-2  icons'>
-                        <div className='flex flex-row-reverse'>
+                        <div className='flex flex-row-reverse  items-center '>
                             <IconInstagram fill='rgba(199, 224, 196, 0.794)' />
                             <IconLinkedin fill='rgba(199, 224, 196, 0.794)' />
                             <IconGithub fill='rgba(199, 224, 196, 0.794)' />
